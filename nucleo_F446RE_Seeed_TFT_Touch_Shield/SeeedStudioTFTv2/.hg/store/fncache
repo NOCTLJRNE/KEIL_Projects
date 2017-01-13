@@ -1,0 +1,5 @@
+data/SeeedStudioTFTv2.cpp.i
+data/touch_tft.cpp.i
+data/SPI_TFT_ILI9341.lib.i
+data/SeeedStudioTFTv2.h.i
+data/touch_tft.h.i

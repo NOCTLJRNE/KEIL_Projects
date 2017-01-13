@@ -1,0 +1,77 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.20.0.0
+Copyright (C) 2016 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Bao An PHAM HO, CEA Grenoble, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.20
+Toolchain Path:  E:\Softs\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 2 (build 183)
+Assembler:       Armasm.exe V5.06 update 2 (build 183)
+Linker/Locator:  ArmLink.exe V5.06 update 2 (build 183)
+Library Manager: ArmAr.exe V5.06 update 2 (build 183)
+Hex Converter:   FromElf.exe V5.06 update 2 (build 183)
+CPU DLL:         SARMCM3.DLL V5.20
+Dialog DLL:      DCM.DLL V1.13.7.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V2.0.18.0
+Dialog DLL:      TCM.DLL V1.14.9.0
+ 
+<h2>Project:</h2>
+E:\Softs\Keil_v5\Projects\Nucleo_blink_led-f57d754b1814\Nucleo_F446_Blink_LED.uvprojx
+Project File Date:  05/21/2016
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 2 (build 183)', folder: 'E:\Softs\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'Target 1'
+compiling gpio_api.c...
+mbed/TARGET_NUCLEO_F446RE/TARGET_STM/TARGET_STM32F4/gpio_object.h(50): warning:  #260-D: explicit type is missing ("int" assumed)
+  static inline void gpio_write(gpio_t *obj, int value)
+mbed/TARGET_NUCLEO_F446RE/TARGET_STM/TARGET_STM32F4/gpio_object.h(50): error:  #65: expected a ";"
+  static inline void gpio_write(gpio_t *obj, int value)
+mbed\gpio_api.h(29): warning:  #12-D: parsing restarts here after previous syntax error
+  uint32_t gpio_set(PinName pin);
+mbed\gpio_api.c(51): error:  #268: declaration may not appear after executable statement in block
+      uint32_t port_index = STM_PORT(pin);
+mbed\gpio_api.c(54): error:  #268: declaration may not appear after executable statement in block
+      uint32_t gpio_add = Set_GPIO_Clock(port_index);
+mbed\gpio_api.c(55): error:  #268: declaration may not appear after executable statement in block
+      GPIO_TypeDef *gpio = (GPIO_TypeDef *)gpio_add;
+mbed\gpio_api.c: 2 warnings, 4 errors
+assembling startup_stm32f446xx.s...
+compiling stm32f4xx_hal_gpio.c...
+compiling main.cpp...
+compiling system_stm32f4xx.c...
+".\Objects\Nucleo_F446_Blink_LED.axf" - 4 Error(s), 2 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F4xx_DFP.2.8.0.pack
+                Keil::Device:Startup:2.4.2
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+   * Component: Startup Version: 2.4.2
+   * Component: GPIO Version: 1.4.2
+
+<h2>Collection of Component include folders:</h2>
+  E:\Softs\Keil_v5\Projects\Nucleo_blink_led-f57d754b1814\RTE
+  E:\Softs\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.8.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: Keil::Device:Startup:2.4.2
+      Source file:   MDK\Device\Source\ARM\STM32F4xx_OTP.s
+      Include file:  Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
+      Source file:   Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f446xx.s
+      Source file:   Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\system_stm32f4xx.c
+
+   * Component: Keil::Device:STM32Cube HAL:GPIO:1.4.2
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_gpio.c
+Target not created.
+Build Time Elapsed:  00:00:05
+</pre>
+</body>
+</html>

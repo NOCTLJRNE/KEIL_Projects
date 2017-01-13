@@ -1,0 +1,72 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.20.0.0
+Copyright (C) 2016 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Bao An PHAM HO, CEA Grenoble, LIC=KIVRA-14BNJ-24SSS-LL08Y-JDCA4-LWKSK
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.20
+Toolchain Path:  D:\Softs\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 2 (build 183)
+Assembler:       Armasm.exe V5.06 update 2 (build 183)
+Linker/Locator:  ArmLink.exe V5.06 update 2 (build 183)
+Library Manager: ArmAr.exe V5.06 update 2 (build 183)
+Hex Converter:   FromElf.exe V5.06 update 2 (build 183)
+CPU DLL:         SARMCM3.DLL V5.20
+Dialog DLL:      DCM.DLL V1.13.7.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V2.0.18.0
+Dialog DLL:      TCM.DLL V1.14.9.0
+ 
+<h2>Project:</h2>
+D:\Softs\Keil_v5\Projects\DISCO-F469NI_blink_leds_copy\DISCO-F469NI_blink_leds.uvprojx
+Project File Date:  12/27/2016
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 2 (build 183)', folder: 'D:\Softs\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'DISCO-F469NI_blink_leds'
+compiling main.cpp...
+main.cpp(1): warning:  #47-D: incompatible redefinition of macro "STM32F469xx"
+  #define STM32F469xx 
+D:\Softs\Keil_v5\ARM\ARMCC\Bin\..\include\stm32f4xx_hal_rcc_ex.h(235): error:  #256: invalid redeclaration of type name "RCC_PLLI2SInitTypeDef" (declared at line 115)
+  }RCC_PLLI2SInitTypeDef;
+D:\Softs\Keil_v5\ARM\ARMCC\Bin\..\include\stm32f4xx_hal_rcc_ex.h(259): error:  #256: invalid redeclaration of type name "RCC_PLLSAIInitTypeDef" (declared at line 134)
+  }RCC_PLLSAIInitTypeDef;
+D:\Softs\Keil_v5\ARM\ARMCC\Bin\..\include\stm32f4xx_hal_rcc_ex.h(297): error:  #256: invalid redeclaration of type name "RCC_PeriphCLKInitTypeDef" (declared at line 189)
+  }RCC_PeriphCLKInitTypeDef;
+D:\Softs\Keil_v5\ARM\ARMCC\Bin\..\include\stm32f4xx_hal_dma2d.h(149): error:  #20: identifier "DMA2D_TypeDef" is undefined
+    DMA2D_TypeDef               *Instance;                                                    /*!< DMA2D Register base address       */
+D:\Softs\Keil_v5\ARM\ARMCC\Bin\..\include\stm32f4xx_hal_eth.h(635): error:  #20: identifier "ETH_TypeDef" is undefined
+    ETH_TypeDef                *Instance;     /*!< Register base address       */
+D:\Softs\Keil_v5\ARM\ARMCC\Bin\..\include\stm32f4xx_hal_ltdc.h(186): error:  #20: identifier "LTDC_TypeDef" is undefined
+    LTDC_TypeDef                *Instance;                /*!< LTDC Register base address                */
+D:\Softs\Keil_v5\ARM\ARMCC\Bin\..\include\stm32f4xx_hal_dsi.h(322): error:  #20: identifier "DSI_TypeDef" is undefined
+    DSI_TypeDef               *Instance;    /*!< Register base address      */
+D:\Softs\Keil_v5\ARM\ARMCC\Bin\..\include\stm32f4xx_hal_rng.h(91): error:  #20: identifier "RNG_TypeDef" is undefined
+    RNG_TypeDef                 *Instance;    /*!< Register base address   */ 
+.\mbed\drivers/Serial.h(70): error:  #20: identifier "MBED_CONF_PLATFORM_DEFAULT_SERIAL_BAUD_RATE" is undefined
+      Serial(PinName tx, PinName rx, const char *name=NULL, int baud = MBED_CONF_PLATFORM_DEFAULT_SERIAL_BAUD_RATE);
+.\mbed\drivers/CAN.h(251): error:  #70: incomplete type is not allowed
+      can_t               _can;
+.\mbed\drivers/RawSerial.h(64): error:  #20: identifier "MBED_CONF_PLATFORM_DEFAULT_SERIAL_BAUD_RATE" is undefined
+      RawSerial(PinName tx, PinName rx, int baud = MBED_CONF_PLATFORM_DEFAULT_SERIAL_BAUD_RATE);
+.\mbed\platform\Callback.h(550): error:  #20: identifier "MBED_STATIC_ASSERT" is undefined
+          MBED_STATIC_ASSERT(sizeof(Callback) - sizeof(_ops) >= sizeof(F),
+          detected during:
+            instantiation of "void mbed::Callback<R ()>::generate(const F &) [with R=void, F=void (*)()]" at line 75
+            instantiation of "mbed::Callback<R ()>::Callback(R (*)()) [with R=void]" at line 65 of ".\mbed\drivers/Ticker.h"
+main.cpp: 1 warning, 12 errors
+".\build\uvision5\DISCO-F469NI_blink_leds.axf" - 12 Error(s), 1 Warning(s).
+
+<h2>Collection of Component include folders:</h2>
+  D:\Softs\Keil_v5\Projects\DISCO-F469NI_blink_leds_copy\RTE
+  D:\Softs\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.8.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+Target not created.
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>

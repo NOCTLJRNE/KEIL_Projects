@@ -1,0 +1,8 @@
+--cpu Cortex-M4.fp
+".\objects\main.o"
+".\objects\stm32f4xx_hal_gpio.o"
+".\objects\startup_stm32f446xx.o"
+".\objects\system_stm32f4xx.o"
+--ro-base 0x08000000 --entry 0x08000000 --rw-base 0x20000000 --entry Reset_Handler --first __Vectors --strict --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\Nucleo_F446_Blink_LED.map" -o .\Objects\Nucleo_F446_Blink_LED.axf
